@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: azure;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(36, 198, 22);
+}
+nav li {
+  list-style-type: none;
+}
+.navlink {
+  text-decoration: none;
+  float: left;
+  padding: 12px 15px;
+  font-size: 26px;
+  font-family: sans-serif;
+  color: rgb(36, 198, 22);
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+.navlink:hover:not(.active) {
+  background-color: rgb(36, 198, 22);
+  color: white;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+.active {
+  background-color: rgb(30, 155, 19);
+  color: white;
+}
+
+/* Footer */
+.footer {
+  border-top: 2px solid black;
+  background-color: #a1a1ad;
+  height: 150px;
+  padding: 15px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-areas: "copyright . ." "copyright . ." "copyright . .";
+  align-items: center;
+  justify-content: space-around;
+}
+.footer p {
+  color: whitesmoke;
+  font-family: monospace;
+  font-size: 20px;
+  grid-area: copyright;
+}
+.footer a {
+  color: whitesmoke;
+  font-family: cursive;
+  font-size: 18px;
+  text-decoration: none;
+}
+.email:hover {
+  color: #1e963e;
+}
+.github:hover {
+  color: #6e5494;
+}
+.stack:hover {
+  color: #d9731f;
+}
+.telegram:hover {
+  color: #0088cc;
+}
+.instagram:hover {
+  color: #c13584;
+}
+.youtube:hover {
+  color: #ff0000;
+}
+
+/* Main Content index */
+.container {
+  background-color: rgb(251, 242, 231);
+  border-radius: 20px;
+  border: 2px solid blue;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  margin-top: 35px;
+}
+.container img {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px dotted rgb(17, 157, 45);
+  display: block;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: contrast(110%);
+}
+.container p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.7px;
+}
+
+#button {
+  display: block;
+  padding: 10px 15px;
+  background-color: blue;
+  border: 2px solid azure;
+  color: white;
+  border-radius: 10px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in,
+    border 0.3s ease-in;
+}
+#button:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in,
+    border 0.3s ease-in;
+}
+
+.container li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.7px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/* Main Content skills */
+.container2 {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  display: grid;
+  grid-template-areas: "computer language honors" "computer sport honors";
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 20px;
+  line-height: 45px;
+}
+#computer {
+  grid-area: computer;
+  width: 400px;
+}
+#language {
+  grid-area: language;
+  width: 400px;
+}
+#sport {
+  grid-area: sport;
+  width: 400px;
+}
+#honors {
+  grid-area: honors;
+  width: 400px;
+}
+.container2 ul {
+  background-color: rgb(251, 242, 231);
+  border-radius: 0 0 20px 20px;
+  border: 2px solid blue;
+  padding: 10px 30px 15px 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style-type: circle;
+}
+.container2 p {
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 232, 210),
+    rgb(217, 252, 252)
+  );
+  border: 2px solid rgb(146, 22, 22);
+  border-radius: 10px 10px 0 0  ;
+  padding: 5px 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container2 p:hover {
+  font-style: italic;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+ul i {
+  color: rgb(100, 100, 100);
+  border-radius: 50%;
+  border: 1px solid rgb(100, 100, 100);
+  float: right;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.green {
+  color: rgb(52, 231, 36);
+  border-radius: 50%;
+  border: 1px solid rgb(13, 0, 255);
+}
+
+/* Main Content contact */
+.form {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-image: linear-gradient(
+    135deg,
+    rgb(250, 232, 210),
+    white,
+    rgb(217, 252, 252)
+  );
+  padding: 20px 35px;
+  border-radius: 10px;
+  border: 2px dashed blue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+h2 {
+  text-align: center;
+}
+label {
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 0;
+}
+input, textarea {
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(40, 40, 40);
+  height: 30px;
+  width: 80%;
+  float: right;
+  clear: both;
+}
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgb(96, 178, 255);
+  transition: box-shadow 0.2s ease-in;
+}
+input[type="submit"] {
+  border: 2px solid rgb(40, 40, 40); 
+  width: auto;
+  height: auto;
+  padding: 8px 18px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+  color: white;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  transition: color 0.4s ease-in, background-color 0.4s ease-in;
+}
+.form span {
+  color: #ff0000;
+}

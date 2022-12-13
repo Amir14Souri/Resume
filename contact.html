@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="navlink">Introduction</a></li>
+        <li><a href="skills.html" class="navlink">Skills & Honors</a></li>
+        <li><a href="contact.html" class="navlink active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="form">
+      <form action="#" method="get" onsubmit="return ask()">
+        <h2>Do you have a Message?</h2>
+        <label for="firstName">First Name: <span>*</span></label><br>
+        <input type="text" id="firstName" placeholder="Amir" required/><br>
+        <label for="lastName">Last Name: </label><br>
+        <input type="text" id="lastName" placeholder="Souri"/><br>
+        <label for="email">Email: <span>*</span></label><br>
+        <input type="email" id="name" placeholder="xxx@mail.com" required/><br>
+        <label for="message">Your Message: <span>*</span></label><br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="In my opinion ..." required></textarea>
+        <input type="submit">
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        Copyright <i class="fa-regular fa-copyright"></i> 2022
+        <i>Amirhossein Souri</i>
+      </p>
+      <a class="email" href="mailto:amir.uni.souri@gamil.com"
+        ><i class="fa-regular fa-at"></i> amir.uni.souri@gmail.com</a
+      >
+      <a class="github" href="https://github.com/Amir14Souri" target="_blank"
+        ><i class="fa-brands fa-github"></i> my Github</a
+      >
+      <a
+        class="stack"
+        href="https://stackoverflow.com/users/20759617/amirhossein-souri"
+        target="_blank"
+        ><i class="fa-brands fa-stack-overflow"></i> my StackOverFlow</a
+      >
+      <a class="telegram" href="https://t.me/Amir7Souri" target="_blank"
+        ><i class="fa-brands fa-telegram"></i> my Telegram</a
+      >
+      <a
+        class="instagram"
+        href="https://www.instagram.com/amir_souri14/"
+        target="_blank"
+        ><i class="fa-brands fa-instagram"></i> my Instagram</a
+      >
+      <a
+        class="youtube"
+        href="https://www.youtube.com/channel/UCqySW5q9gMcqF_sSF1Fneww"
+        target="_blank"
+        ><i class="fa-brands fa-youtube"></i> my Youtube Channel</a
+      >
+    </div>
+  </body>
+  <script src="scriptContact.js"></script>
+</html>
